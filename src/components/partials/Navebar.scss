@@ -1,0 +1,28 @@
+.navbar {
+  color: #fff;
+  .logo {
+    width: 40%;
+    text-align: left;
+    a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .menu-list {
+    width: 50%;
+    text-align: right;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+      padding: 0.5rem;
+    }
+    a {
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
