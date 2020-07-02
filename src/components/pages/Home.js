@@ -36,7 +36,7 @@ const Home = ({ history }) => {
       <Navebar />
       <div className="container main-box">
         <div className="row">
-          <h1> Welcome To Home Page...!</h1>
+          <h3> User Profile:</h3>
           <Table responsive>
             <tbody>
               <tr>
