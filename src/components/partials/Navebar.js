@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
@@ -7,7 +7,6 @@ import { LOGOUT } from '../../redux/types';
 import './Navebar.scss';
 
 const Navbar = ({ title, icon }) => {
-  const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   const onLogout = () => {
@@ -21,9 +20,6 @@ const Navbar = ({ title, icon }) => {
       </h2>
       <ul className="menu-list">
         <li>
-          {/* <button onClick={onLogout}>
-            <span className="hide-sm">Logout</span>
-          </button> */}
           <Button onClick={onLogout} variant="light">Logout</Button>
         </li>
       </ul>

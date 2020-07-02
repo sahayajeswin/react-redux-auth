@@ -20,8 +20,8 @@ const Login = ({ history }) => {
     // eslint-disable-next-line
   }, [state.isAuthenticated, state.error]);
 
-  const [email, setEmail] = useState('sahay@gmail.com');
-  const [password, setPassword] = useState('qwer!234');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();

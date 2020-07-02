@@ -5,12 +5,12 @@ import Navebar from '../partials/Navebar';
 import { Table } from 'react-bootstrap';
 
 const Home = ({ history }) => {
-  const state = useSelector((state) => state.auth);
+  const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (state.user) {
-      const { username, email, phone } = state.user;
+    if (auth.user) {
+      const { username, email, phone } = auth.user;
       setUser({
         username,
         email,
@@ -21,7 +21,7 @@ const Home = ({ history }) => {
     if (!usreFetch && !user.username) {
       dispatch(userProfile());
     }
-  }, [state.user]);
+  }, [auth.user]);
 
   const [user, setUser] = useState({
     username: '',
